@@ -1,0 +1,11 @@
+Time resolution is 1 ps
+Time: 0 | OperandoA: 0000 | OperandoB: 0000 | Operacion: 000000 | Resultado: 0000
+Time: 10000 | OperandoA: 0111 | OperandoB: 0001 | Operacion: 100000 | Resultado: 1000
+Time: 20000 | OperandoA: 0111 | OperandoB: 0001 | Operacion: 100010 | Resultado: 0110
+Time: 30000 | OperandoA: 0111 | OperandoB: 0001 | Operacion: 100100 | Resultado: 0001
+Time: 40000 | OperandoA: 0111 | OperandoB: 0001 | Operacion: 100101 | Resultado: 0111
+Time: 50000 | OperandoA: 0111 | OperandoB: 0001 | Operacion: 100110 | Resultado: 0110
+Time: 60000 | OperandoA: 0111 | OperandoB: 0001 | Operacion: 000010 | Resultado: 0011
+Time: 70000 | OperandoA: 0111 | OperandoB: 0001 | Operacion: 000011 | Resultado: 1110
+Time: 80000 | OperandoA: 0111 | OperandoB: 0001 | Operacion: 100111 | Resultado: 1000
+$finish called at time : 90 ns : File "C:/Users/admin/Desktop/uart/uart.srcs/sim_1/new/alu_tb.v" Line 59
