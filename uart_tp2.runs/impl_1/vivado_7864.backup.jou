@@ -3,12 +3,12 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Mar  6 16:10:51 2025
-# Process ID: 16396
-# Current directory: C:/Users/admin/Desktop/Arquitectura de Computadoras/Otros/uart_tp2/uart_tp2.runs/impl_1
+# Start of session at: Thu Mar  6 18:08:24 2025
+# Process ID: 7864
+# Current directory: C:/Users/admin/Desktop/Arquitectura de Computadoras/uart_tp2/uart_tp2.runs/impl_1
 # Command line: vivado.exe -log top_uart.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_uart.tcl -notrace
-# Log file: C:/Users/admin/Desktop/Arquitectura de Computadoras/Otros/uart_tp2/uart_tp2.runs/impl_1/top_uart.vdi
-# Journal file: C:/Users/admin/Desktop/Arquitectura de Computadoras/Otros/uart_tp2/uart_tp2.runs/impl_1\vivado.jou
+# Log file: C:/Users/admin/Desktop/Arquitectura de Computadoras/uart_tp2/uart_tp2.runs/impl_1/top_uart.vdi
+# Journal file: C:/Users/admin/Desktop/Arquitectura de Computadoras/uart_tp2/uart_tp2.runs/impl_1\vivado.jou
 # Running On        :DESKTOP-JDC6D5S
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :19045
@@ -17,8 +17,8 @@
 # CPU Physical cores:2
 # CPU Logical cores :4
 # Host memory       :8467 MB
-# Swap memory       :4651 MB
-# Total Virtual     :13119 MB
-# Available Virtual :4210 MB
+# Swap memory       :2684 MB
+# Total Virtual     :11151 MB
+# Available Virtual :3029 MB
 #-----------------------------------------------------------
 source top_uart.tcl -notrace

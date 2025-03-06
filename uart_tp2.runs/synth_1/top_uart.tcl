@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/admin/Desktop/Arquitectura de Computadoras/Otros/uart_tp2/uart_tp2.runs/synth_1/top_uart.tcl"
+  variable script "C:/Users/admin/Desktop/Arquitectura de Computadoras/uart_tp2/uart_tp2.runs/synth_1/top_uart.tcl"
   variable category "vivado_synth"
 }
 
@@ -62,23 +62,23 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/admin/Desktop/Arquitectura de Computadoras/Otros/uart_tp2/uart_tp2.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/admin/Desktop/Arquitectura de Computadoras/Otros/uart_tp2/uart_tp2.xpr} [current_project]
+set_property webtalk.parent_dir {C:/Users/admin/Desktop/Arquitectura de Computadoras/uart_tp2/uart_tp2.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/admin/Desktop/Arquitectura de Computadoras/uart_tp2/uart_tp2.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
-set_property ip_output_repo {c:/Users/admin/Desktop/Arquitectura de Computadoras/Otros/uart_tp2/uart_tp2.cache/ip} [current_project]
+set_property ip_output_repo {c:/Users/admin/Desktop/Arquitectura de Computadoras/uart_tp2/uart_tp2.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  {C:/Users/admin/Desktop/Arquitectura de Computadoras/Otros/uart_tp2/uart_tp2.srcs/sources_1/new/alu.v}
-  {C:/Users/admin/Desktop/Arquitectura de Computadoras/Otros/uart_tp2/uart_tp2.srcs/sources_1/new/baud_rate.v}
-  {C:/Users/admin/Desktop/Arquitectura de Computadoras/Otros/uart_tp2/uart_tp2.srcs/sources_1/new/fifo.v}
-  {C:/Users/admin/Desktop/Arquitectura de Computadoras/Otros/uart_tp2/uart_tp2.srcs/sources_1/new/latch.v}
-  {C:/Users/admin/Desktop/Arquitectura de Computadoras/Otros/uart_tp2/uart_tp2.srcs/sources_1/new/uart_rx.v}
-  {C:/Users/admin/Desktop/Arquitectura de Computadoras/Otros/uart_tp2/uart_tp2.srcs/sources_1/new/uart_tx.v}
-  {C:/Users/admin/Desktop/Arquitectura de Computadoras/Otros/uart_tp2/uart_tp2.srcs/sources_1/new/top_uart.v}
+  {C:/Users/admin/Desktop/Arquitectura de Computadoras/uart_tp2/uart_tp2.srcs/sources_1/new/alu.v}
+  {C:/Users/admin/Desktop/Arquitectura de Computadoras/uart_tp2/uart_tp2.srcs/sources_1/new/baud_rate.v}
+  {C:/Users/admin/Desktop/Arquitectura de Computadoras/uart_tp2/uart_tp2.srcs/sources_1/new/fifo.v}
+  {C:/Users/admin/Desktop/Arquitectura de Computadoras/uart_tp2/uart_tp2.srcs/sources_1/new/latch.v}
+  {C:/Users/admin/Desktop/Arquitectura de Computadoras/uart_tp2/uart_tp2.srcs/sources_1/new/uart_rx.v}
+  {C:/Users/admin/Desktop/Arquitectura de Computadoras/uart_tp2/uart_tp2.srcs/sources_1/new/uart_tx.v}
+  {C:/Users/admin/Desktop/Arquitectura de Computadoras/uart_tp2/uart_tp2.srcs/sources_1/new/top_uart.v}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -89,10 +89,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/admin/Desktop/Arquitectura de Computadoras/Otros/uart_tp2/uart_tp2.srcs/constrs_1/new/top.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/admin/Desktop/Arquitectura de Computadoras/Otros/uart_tp2/uart_tp2.srcs/constrs_1/new/top.xdc}}]
+read_xdc {{C:/Users/admin/Desktop/Arquitectura de Computadoras/uart_tp2/uart_tp2.srcs/constrs_1/new/top.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/admin/Desktop/Arquitectura de Computadoras/uart_tp2/uart_tp2.srcs/constrs_1/new/top.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental {C:/Users/admin/Desktop/Arquitectura de Computadoras/uart_tp2/uart_tp2.srcs/utils_1/imports/synth_1/top_uart.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
