@@ -14,14 +14,14 @@ module alu
     );
 
     // Operaciones
-    localparam ADD      =   8'b00100000;
-    localparam SUB      =   8'b00100010;
-    localparam AND      =   8'b00100100; 
-    localparam OR       =   8'b00100101; 
-    localparam XOR      =   8'b00100110;
-    localparam SRA      =   8'b00000011;
-    localparam SRL      =   8'b00000010;
-    localparam NOR      =   8'b00100111;
+    localparam ADD      =   8'b11111000;
+    localparam SUB      =   8'b11111001;
+    localparam AND      =   8'b11111010; 
+    localparam OR       =   8'b11111011; 
+    localparam XOR      =   8'b11111100;
+    localparam SRA      =   8'b11111101;
+    localparam SRL      =   8'b11111110;
+    localparam NOR      =   8'b11111111;
     
     reg signed [tamanioSalida-1:0] temp; // Se define como signed para SRA
 
