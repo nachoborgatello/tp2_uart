@@ -57,9 +57,9 @@ module top
        .empty(rx_empty), .full(), .r_data(r_data));
     
     // OpCodes
-    localparam ALU_DATA_A_OP    = 8'b11110101; //253
-    localparam ALU_DATA_B_OP    = 8'b11111110; //254
-    localparam ALU_OPERATOR_OP  = 8'b11111111; //255
+    localparam ALU_DATA_A_OP    = 8'b11110101;
+    localparam ALU_DATA_B_OP    = 8'b11110110;
+    localparam ALU_OPERATOR_OP  = 8'b11110111;
         
     always @(posedge clk or posedge reset) begin
         if (reset) begin
