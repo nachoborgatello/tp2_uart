@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.runs/impl_1'
+HD_PWD='C:/Users/ignac/Downloads/tp2_uart/uart_tp2.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

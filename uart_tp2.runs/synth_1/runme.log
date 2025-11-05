@@ -8,13 +8,13 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Mon Oct 27 20:02:06 2025
+  **** Start of session at: Wed Nov  5 17:22:55 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source top.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental {C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.srcs/utils_1/imports/synth_1/top.dcp}
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top top -part xc7a35tcpg236-1
 Starting synth_design
@@ -25,80 +25,80 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 44668
+INFO: [Synth 8-7075] Helper process launched with PID 27612
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 984.730 ; gain = 468.180
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 984.840 ; gain = 469.152
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.srcs/sources_1/new/top.v:3]
-INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.srcs/sources_1/new/debounce.v:3]
-INFO: [Synth 8-226] default block is never used [C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.srcs/sources_1/new/debounce.v:39]
-INFO: [Synth 8-6155] done synthesizing module 'debounce' (0#1) [C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.srcs/sources_1/new/debounce.v:3]
-INFO: [Synth 8-6157] synthesizing module 'mod_m_counter' [C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.srcs/sources_1/new/mod_m_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/sources_1/new/top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/sources_1/new/debounce.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/sources_1/new/debounce.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (0#1) [C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/sources_1/new/debounce.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mod_m_counter' [C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/sources_1/new/mod_m_counter.v:3]
 	Parameter N bound to: 10 - type: integer 
 	Parameter M bound to: 325 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mod_m_counter' (0#1) [C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.srcs/sources_1/new/mod_m_counter.v:1]
-INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.srcs/sources_1/new/uart_rx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mod_m_counter' (0#1) [C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/sources_1/new/mod_m_counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/sources_1/new/uart_rx.v:1]
 	Parameter DBIT bound to: 8 - type: integer 
 	Parameter SB_TICK bound to: 16 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.srcs/sources_1/new/uart_rx.v:1]
-INFO: [Synth 8-6157] synthesizing module 'fifo' [C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.srcs/sources_1/new/fifo.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/sources_1/new/uart_rx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fifo' [C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/sources_1/new/fifo.v:1]
 	Parameter B bound to: 8 - type: integer 
 	Parameter W bound to: 4 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.srcs/sources_1/new/fifo.v:63]
-INFO: [Synth 8-6155] done synthesizing module 'fifo' (0#1) [C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.srcs/sources_1/new/fifo.v:1]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.srcs/sources_1/new/top.v:76]
-INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.srcs/sources_1/new/alu.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.srcs/sources_1/new/alu.v:3]
-INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.srcs/sources_1/new/uart_tx.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/sources_1/new/fifo.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'fifo' (0#1) [C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/sources_1/new/fifo.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/sources_1/new/top.v:76]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/sources_1/new/alu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/sources_1/new/alu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/sources_1/new/uart_tx.v:1]
 	Parameter DBIT bound to: 8 - type: integer 
 	Parameter SB_TICK bound to: 16 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.srcs/sources_1/new/uart_tx.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.srcs/sources_1/new/top.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/sources_1/new/uart_tx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/sources_1/new/top.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1093.512 ; gain = 576.961
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1093.328 ; gain = 577.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1093.512 ; gain = 576.961
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1093.328 ; gain = 577.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1093.512 ; gain = 576.961
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1093.328 ; gain = 577.641
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1093.512 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1093.328 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.srcs/constrs_1/new/top.xdc]
-Finished Parsing XDC File [C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.srcs/constrs_1/new/top.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1185.066 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1182.656 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1185.066 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1182.656 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1185.066 ; gain = 668.516
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1182.656 ; gain = 666.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1185.066 ; gain = 668.516
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1182.656 ; gain = 666.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1185.066 ; gain = 668.516
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1182.656 ; gain = 666.969
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'debounce'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'uart_rx'
@@ -131,7 +131,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encod
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'uart_tx'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1185.066 ; gain = 668.516
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1182.656 ; gain = 666.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -183,7 +183,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1185.066 ; gain = 668.516
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1182.656 ; gain = 666.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -205,13 +205,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1282.492 ; gain = 765.941
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1283.199 ; gain = 767.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1315.523 ; gain = 798.973
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1316.625 ; gain = 800.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -232,7 +232,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1315.523 ; gain = 798.973
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1316.625 ; gain = 800.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -250,37 +250,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1509.430 ; gain = 992.879
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1510.453 ; gain = 994.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1509.430 ; gain = 992.879
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1510.453 ; gain = 994.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1509.430 ; gain = 992.879
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1510.453 ; gain = 994.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1509.430 ; gain = 992.879
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1510.453 ; gain = 994.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1509.430 ; gain = 992.879
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1510.453 ; gain = 994.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1509.430 ; gain = 992.879
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1510.453 ; gain = 994.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -299,11 +299,11 @@ Report Cell Usage:
 |1     |BUFG     |     1|
 |2     |CARRY4   |    14|
 |3     |LUT1     |    43|
-|4     |LUT2     |    70|
+|4     |LUT2     |    75|
 |5     |LUT3     |    29|
-|6     |LUT4     |    30|
-|7     |LUT5     |    38|
-|8     |LUT6     |    67|
+|6     |LUT4     |    23|
+|7     |LUT5     |    46|
+|8     |LUT6     |    64|
 |9     |RAM32M   |     2|
 |10    |RAM32X1D |     4|
 |11    |FDCE     |    76|
@@ -313,29 +313,29 @@ Report Cell Usage:
 |15    |OBUF     |    19|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1509.430 ; gain = 992.879
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1510.453 ; gain = 994.766
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:42 . Memory (MB): peak = 1509.430 ; gain = 901.324
-Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1509.430 ; gain = 992.879
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 1510.453 ; gain = 905.438
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1510.453 ; gain = 994.766
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1509.430 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1519.664 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1509.430 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1523.316 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 6 instances were transformed.
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
   RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
 
-Synth Design complete | Checksum: a031c7f8
+Synth Design complete | Checksum: 824e1e98
 INFO: [Common 17-83] Releasing license: Synthesis
 44 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:01:05 . Memory (MB): peak = 1509.430 ; gain = 1182.250
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1509.430 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.runs/synth_1/top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1523.316 ; gain = 1197.484
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1523.316 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ignac/Downloads/tp2_uart/uart_tp2.runs/synth_1/top.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Oct 27 20:03:17 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  5 17:23:43 2025...

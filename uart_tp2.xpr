@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="68" Path="C:/Users/ignac/Downloads/para git/uart_tp2/uart_tp2.xpr">
+<Project Product="Vivado" Version="7" Minor="68" Path="C:/Users/ignac/Downloads/tp2_uart/uart_tp2.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="44f909d851554130ba0205295d5319b1"/>

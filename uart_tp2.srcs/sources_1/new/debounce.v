@@ -6,19 +6,19 @@ module debounce(
     output reg db_level, db_tick
     );
     
+    // Estados del antirrebote
     localparam [1:0]
-        zero = 2'b00,
-        wait0 = 2'b01,
-        one = 2'b10,
-        wait1 = 2'b11;
+        zero  = 2'b00,  // botón liberado
+        wait0 = 2'b01,  // espera confirmación de liberado
+        one   = 2'b10,  // botón presionado
+        wait1 = 2'b11;  // espera confirmación de presionado
     
-    localparam N=20;
+    localparam N = 20; // determina el tiempo de espera para eliminar rebotes
     
     reg [N-1:0] q_reg, q_next;
     reg [1:0] state_reg, state_next;
     
-    // body
-    // fsmd state & data registers 
+    // Registro de estado y contador
     always @(posedge clk, posedge reset)
         if (reset)
             begin
@@ -31,57 +31,54 @@ module debounce(
                 q_reg <= q_next;
             end
     
+    // Lógica de control antirrebote
     always @*
     begin
-    state_next = state_reg;
-    q_next = q_reg;
-    db_tick = 1'b0;
-    case (state_reg)
-        zero:
-            begin
-                db_level = 1'b0;
-                if (sw)
-                    begin
-                        state_next = wait1;
-                        q_next = {N{1'b1}};
-                    end
-            end
-        wait1:
-            begin
-                db_level = 1'b0;
-                if(sw)
-                    begin
-                        q_next = q_reg - 1;
-                        if (q_next==0)
-                            begin
-                                state_next = one;
-                                db_tick = 1'b1;
-                            end
-                    end
-                else
-                    state_next = zero;
-            end
-        one:
-            begin
-                db_level = 1'b1;
-                state_next = wait0;
-                //if (~sw)
-                //    begin
-                //        state_next = wait0;
-                //        q_next = {N{1'b1}};
-                //    end
-            end
-        wait0:
-            begin
-                db_level = 1'b0;
-                if (sw)
-                    begin
-                        state_next = wait0;
-                    end
-                else
-                    state_next = zero;
-            end
-        default: state_next = zero;
-    endcase
+        state_next = state_reg;
+        q_next = q_reg;
+        db_tick = 1'b0;
+
+        case (state_reg)
+            zero: // espera botón presionado
+                begin
+                    db_level = 1'b0;
+                    if (sw)
+                        begin
+                            state_next = wait1;
+                            q_next = {N{1'b1}};
+                        end
+                end
+
+            wait1: // cuenta para confirmar presionado estable
+                begin
+                    db_level = 1'b0;
+                    if (sw)
+                        begin
+                            q_next = q_reg - 1;
+                            if (q_next == 0)
+                                begin
+                                    state_next = one;
+                                    db_tick = 1'b1; // pulso en flanco de subida
+                                end
+                        end
+                    else
+                        state_next = zero;
+                end
+
+            one: // botón confirmado presionado
+                begin
+                    db_level = 1'b1;
+                    state_next = wait0;
+                end
+
+            wait0: // espera confirmación de liberado
+                begin
+                    db_level = 1'b0;
+                    if (~sw)
+                        state_next = zero;
+                end
+
+            default: state_next = zero;
+        endcase
     end      
 endmodule
