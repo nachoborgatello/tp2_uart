@@ -1,2 +1,4 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ignac/project_2/project_2.srcs/sim_1/new/baud_rate_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module baud_rate_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ignac/Downloads/tp2_uart/uart_tp2.srcs/sim_1/new/uart_rx_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx_tb
